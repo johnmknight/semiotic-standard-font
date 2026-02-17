@@ -1,0 +1,32 @@
+{
+  "name": "semiotic-standard-font",
+  "version": "0.1.0",
+  "description": "Semiotic Standard webfont based on Ron Cobb's iconography from the Alien franchise",
+  "author": "John M. Knight",
+  "license": "OFL-1.1",
+  "scripts": {
+    "build": "npm run clean && npm run build:svg && npm run build:font && npm run build:duotone && npm run build:sprite && npm run build:css && npm run build:preview",
+    "build:svg": "svgo -f svg/mono -o svg/mono --config svgo.config.js",
+    "build:font": "node scripts/build-font.js",
+    "build:duotone": "node scripts/build-duotone.js",
+    "build:sprite": "node scripts/build-sprite.js",
+    "build:css": "node scripts/build-css.js",
+    "build:preview": "node scripts/build-preview.js",
+    "dev": "nodemon --watch svg -e svg --exec npm run build",
+    "test:mono": "node scripts/test-mono.js",
+    "clean": "rimraf fonts/* css/* sprites/* preview/index.html"
+  },
+  "devDependencies": {
+    "svgtofont": "^4.2.0",
+    "svgo": "^3.2.0",
+    "rimraf": "^5.0.0"
+  },
+  "keywords": [
+    "semiotic-standard",
+    "alien",
+    "ron-cobb",
+    "webfont",
+    "icon-font",
+    "sci-fi"
+  ]
+}
