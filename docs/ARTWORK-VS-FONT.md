@@ -1,20 +1,25 @@
 # Original Artwork vs. Font Glyphs
 
-Side-by-side comparison of Ron Cobb's original Semiotic Standard artwork against the
-hand-drawn source bitmaps and final font glyphs produced by this pipeline.
+Complete visual reference for the Semiotic Standard across all franchise appearances,
+alongside the hand-drawn source bitmaps and final font glyphs from this project.
 
-> **Original artwork** — Vector recreations from [louh/semiotic-standard](https://github.com/louh/semiotic-standard) (CC BY 4.0), based on Ron Cobb's 1978 designs.
->
-> **Hand-drawn source** — Original hand-drawn PNGs by John M. Knight, embedded in SVG wrappers (`from john/`).
->
-> **Font glyph** — Final monochrome glyph as it appears in the webfont (Cobb frame + traced symbol, `svg/mono/extended/`).
+**Contents:**
+1. [Ron Cobb Original 30 (Base Set)](#part-1--ron-cobb-original-30-base-set)
+2. [Hand-Drawn Extended Set — Food & Dining](#part-2--hand-drawn-extended-set-food--dining-phase-1-complete)
+3. [Franchise Reference Gallery](#part-3--franchise-reference-gallery)
+
+> **Attribution:** Original artwork by Ron Cobb (1978). Vector recreations from [louh/semiotic-standard](https://github.com/louh/semiotic-standard) (CC BY 4.0).
+> Franchise reference images sourced from [Xenopedia](https://avp.fandom.com/wiki/Semiotic_Standard) and
+> [Steam Community Guide by Myrmidont](https://steamcommunity.com/sharedfiles/filedetails/?id=325588161).
+> Extended set hand-drawn by John M. Knight.
 
 ---
 
 ## Part 1 — Ron Cobb Original 30 (Base Set)
 
-The canonical icons from *Alien* (1979). The base set is not yet in the font pipeline —
-these are the reference vector recreations. Font versions are planned for a future phase.
+The canonical 30 icons designed by Ron Cobb in 1978 for *Alien* (1979).
+Vector recreations from [louh/semiotic-standard](https://github.com/louh/semiotic-standard) (CC BY 4.0).
+The base set has not yet been processed through the bitmap-to-font pipeline — font versions are planned for a future phase.
 
 | # | Original Artwork | Name | Cobb Color | Font Status |
 |---|-----------------|------|------------|-------------|
@@ -63,34 +68,228 @@ Each row shows the original hand-drawn source bitmap and the final composed font
 
 | U+ | Hand-Drawn Source | Composed Font Glyph | Name |
 |----|-------------------|---------------------|------|
-| U+E001 | ![Alcohol — hand-drawn source](work/alcohol_1_source.png) | ![Alcohol — font glyph](svg/mono/extended/ss-alcohol.svg) | Alcohol |
-| U+E002 | ![Allergen Warning — hand-drawn source](work/allergen_warning_1_source.png) | ![Allergen Warning — font glyph](svg/mono/extended/ss-allergen-warning.svg) | Allergen Warning |
-| U+E003 | ![Beverage Dispenser — hand-drawn source](work/beverage_dispenser_1_source.png) | ![Beverage Dispenser — font glyph](svg/mono/extended/ss-beverage-dispenser.svg) | Beverage Dispenser |
-| U+E004 | ![Contaminated — hand-drawn source](work/contaminated_1_source.png) | ![Contaminated — font glyph](svg/mono/extended/ss-contaminated.svg) | Contaminated |
-| U+E005 | ![Emergency Rations — hand-drawn source](work/emergency_rations_1_source.png) | ![Emergency Rations — font glyph](svg/mono/extended/ss-emergency-rations.svg) | Emergency Rations |
-| U+E006 | ![Food Heating — hand-drawn source](work/food_heating_1_source.png) | ![Food Heating — font glyph](svg/mono/extended/ss-food-heating.svg) | Food Heating |
-| U+E007 | ![Fresh Produce — hand-drawn source](work/fresh_produce_1_source.png) | ![Fresh Produce — font glyph](svg/mono/extended/ss-fresh-produce.svg) | Fresh Produce |
-| U+E008 | ![Frozen Goods — hand-drawn source](work/frozen_goods_1_source.png) | ![Frozen Goods — font glyph](svg/mono/extended/ss-frozen-goods.svg) | Frozen Goods |
-| U+E009 | ![Grain — hand-drawn source](work/grain_1_source.png) | ![Grain — font glyph](svg/mono/extended/ss-grain.svg) | Grain |
-| U+E00A | ![Hydroponic — hand-drawn source](work/hydroponic_1_source.png) | ![Hydroponic — font glyph](svg/mono/extended/ss-hydroponic.svg) | Hydroponic |
-| U+E00B | ![Organic Waste — hand-drawn source](work/organic_waste_1_source.png) | ![Organic Waste — font glyph](svg/mono/extended/ss-organic-waste.svg) | Organic Waste |
-| U+E00C | ![Potable Water — hand-drawn source](work/potable_water_1_source.png) | ![Potable Water — font glyph](svg/mono/extended/ss-potable-water.svg) | Potable Water |
-| U+E00D | ![Protein — hand-drawn source](work/protein_1_source.png) | ![Protein — font glyph](svg/mono/extended/ss-protein.svg) | Protein |
-| U+E00E | ![Rations — hand-drawn source](work/rations_1_source.png) | ![Rations — font glyph](svg/mono/extended/ss-rations.svg) | Rations |
-| U+E00F | ![Utensils — hand-drawn source](work/utensils_1_source.png) | ![Utensils — font glyph](svg/mono/extended/ss-utensils.svg) | Utensils |
-| U+E010 | ![Water Filtration — hand-drawn source](work/water_filtration_1_source.png) | ![Water Filtration — font glyph](svg/mono/extended/ss-water-filtration.svg) | Water Filtration |
+| U+E001 | ![Alcohol source](work/alcohol_1_source.png) | ![Alcohol glyph](svg/mono/extended/ss-alcohol.svg) | Alcohol |
+| U+E002 | ![Allergen Warning source](work/allergen_warning_1_source.png) | ![Allergen Warning glyph](svg/mono/extended/ss-allergen-warning.svg) | Allergen Warning |
+| U+E003 | ![Beverage Dispenser source](work/beverage_dispenser_1_source.png) | ![Beverage Dispenser glyph](svg/mono/extended/ss-beverage-dispenser.svg) | Beverage Dispenser |
+| U+E004 | ![Contaminated source](work/contaminated_1_source.png) | ![Contaminated glyph](svg/mono/extended/ss-contaminated.svg) | Contaminated |
+| U+E005 | ![Emergency Rations source](work/emergency_rations_1_source.png) | ![Emergency Rations glyph](svg/mono/extended/ss-emergency-rations.svg) | Emergency Rations |
+| U+E006 | ![Food Heating source](work/food_heating_1_source.png) | ![Food Heating glyph](svg/mono/extended/ss-food-heating.svg) | Food Heating |
+| U+E007 | ![Fresh Produce source](work/fresh_produce_1_source.png) | ![Fresh Produce glyph](svg/mono/extended/ss-fresh-produce.svg) | Fresh Produce |
+| U+E008 | ![Frozen Goods source](work/frozen_goods_1_source.png) | ![Frozen Goods glyph](svg/mono/extended/ss-frozen-goods.svg) | Frozen Goods |
+| U+E009 | ![Grain source](work/grain_1_source.png) | ![Grain glyph](svg/mono/extended/ss-grain.svg) | Grain |
+| U+E00A | ![Hydroponic source](work/hydroponic_1_source.png) | ![Hydroponic glyph](svg/mono/extended/ss-hydroponic.svg) | Hydroponic |
+| U+E00B | ![Organic Waste source](work/organic_waste_1_source.png) | ![Organic Waste glyph](svg/mono/extended/ss-organic-waste.svg) | Organic Waste |
+| U+E00C | ![Potable Water source](work/potable_water_1_source.png) | ![Potable Water glyph](svg/mono/extended/ss-potable-water.svg) | Potable Water |
+| U+E00D | ![Protein source](work/protein_1_source.png) | ![Protein glyph](svg/mono/extended/ss-protein.svg) | Protein |
+| U+E00E | ![Rations source](work/rations_1_source.png) | ![Rations glyph](svg/mono/extended/ss-rations.svg) | Rations |
+| U+E00F | ![Utensils source](work/utensils_1_source.png) | ![Utensils glyph](svg/mono/extended/ss-utensils.svg) | Utensils |
+| U+E010 | ![Water Filtration source](work/water_filtration_1_source.png) | ![Water Filtration glyph](svg/mono/extended/ss-water-filtration.svg) | Water Filtration |
 
----
-
-## Pipeline
-
+**Pipeline:**
 ```
 Hand-drawn PNG  →  step1_extract.py   →  trace_all.py    →  step5_compose.py   →  step6_fix_winding.py  →  build-font-direct.js
 (from john/)       (crop + B&W)          (OpenCV trace)     (+ Cobb frame)         (nonzero winding)        (TTF / WOFF / WOFF2)
 ```
-
 See [PIPELINE-PROCESSES.md](PIPELINE-PROCESSES.md) for full technical documentation.
 
 ---
 
-*Original Semiotic Standard designed by Ron Cobb, 1978. Vector recreations by [louh/semiotic-standard](https://github.com/louh/semiotic-standard) (CC BY 4.0). Extended set hand-drawn by John M. Knight.*
+## Part 3 — Franchise Reference Gallery
+
+Every known appearance of the Semiotic Standard across the Alien franchise,
+collected as visual reference for the extended set design phase.
+
+### Cobb Original Icons — Sheet 1 (1978)
+_Original 30 icons from Cobb's graph-paper sketches, published in Colorvision (1981)_
+
+![Cobb Original Icons — Sheet 1](docs/reference/franchise/xeno-cobb-original-1.jpg)
+
+_Source: Xenopedia / Ron Cobb_
+
+### Cobb Original Icons — Sheet 2 (1978)
+_Second sheet showing color coding and additional variants_
+
+![Cobb Original Icons — Sheet 2](docs/reference/franchise/xeno-cobb-original-2.jpg)
+
+_Source: Xenopedia / Ron Cobb_
+
+### Alien (1979) — In-Film (1979)
+_Icons as seen aboard the USCSS Nostromo_
+
+![Alien (1979) — In-Film](docs/reference/franchise/xeno-alien-1979-a.png)
+
+_Source: Xenopedia_
+
+### Aliens (1986) — Hadley's Hope (1986)
+_Hexagonal redesign by Cobb for Hadley's Hope colony_
+
+![Aliens (1986) — Hadley's Hope](docs/reference/franchise/xeno-aliens-hadleys-hope.png)
+
+_Source: Xenopedia_
+
+### Aliens (1986) — Additional (1986)
+_Additional icons seen throughout the film_
+
+![Aliens (1986) — Additional](docs/reference/franchise/xeno-aliens-b.png)
+
+_Source: Xenopedia_
+
+### Aliens: Nightmare Asylum (Comic) (1993)
+_Semiotic Standard as seen in the comic series_
+
+![Aliens: Nightmare Asylum (Comic)](docs/reference/franchise/xeno-nightmare-asylum.png)
+
+_Source: Xenopedia_
+
+### Alien: Isolation — In-Game Icons (2014)
+_Extended set by Jon McKellan (Creative Assembly), Sevastopol Station_
+
+![Alien: Isolation — In-Game Icons](docs/reference/franchise/xeno-isolation-ingame.jpg)
+
+_Source: Xenopedia_
+
+### Alien: Isolation — Trophy/Achievement Icons (2014)
+_All 50 achievement icons using original + McKellan extended set_
+
+![Alien: Isolation — Trophy/Achievement Icons](docs/reference/franchise/xeno-isolation-achievements.jpg)
+
+_Source: Xenopedia_
+
+### Alien: Isolation — Symbol Legend Sheet (2014)
+_Complete symbol reference sheet from the Steam guide "What's Behind That Door?"_
+
+![Alien: Isolation — Symbol Legend Sheet](docs/reference/franchise/isolation-legend-sheet.jpg)
+
+_Source: Steam Community (Myrmidont)_
+
+### Alien: Isolation — In-Game Signage 1 (2014)
+_Symbols as encountered on Sevastopol Station doors and corridors_
+
+![Alien: Isolation — In-Game Signage 1](docs/reference/franchise/isolation-symbols-ingame-1.jpg)
+
+_Source: Steam Community_
+
+### Alien: Isolation — In-Game Signage 2 (2014)
+![Alien: Isolation — In-Game Signage 2](docs/reference/franchise/isolation-symbols-ingame-2.jpg)
+
+_Source: Steam Community_
+
+### Alien: Isolation — In-Game Signage 3 (2014)
+![Alien: Isolation — In-Game Signage 3](docs/reference/franchise/isolation-symbols-ingame-3.jpg)
+
+_Source: Steam Community_
+
+### Alien: Isolation — In-Game Signage 4 (2014)
+![Alien: Isolation — In-Game Signage 4](docs/reference/franchise/isolation-symbols-ingame-4.jpg)
+
+_Source: Steam Community_
+
+### Alien: Isolation — In-Game Signage 5 (2014)
+![Alien: Isolation — In-Game Signage 5](docs/reference/franchise/isolation-symbols-ingame-5.jpg)
+
+_Source: Steam Community_
+
+### Aliens: Defiance (Comic) (2016)
+_Semiotic Standard as seen in the 2016 comic book series_
+
+![Aliens: Defiance (Comic)](docs/reference/franchise/xeno-defiance.png)
+
+_Source: Xenopedia_
+
+### Alien: Covenant (Film) (2017)
+_Icons aboard the USCSS Covenant_
+
+![Alien: Covenant (Film)](docs/reference/franchise/xeno-covenant.png)
+
+_Source: Xenopedia_
+
+### Jonesy: Nine Lives on the Nostromo (Book) (2019)
+_Children's book featuring Nostromo-era icons_
+
+![Jonesy: Nine Lives on the Nostromo (Book)](docs/reference/franchise/xeno-nine-lives-nostromo.jpg)
+
+_Source: Xenopedia_
+
+### Aliens: Resistance (Comic) (2019)
+_Semiotic Standard in the 2019 comic series_
+
+![Aliens: Resistance (Comic)](docs/reference/franchise/xeno-resistance.png)
+
+_Source: Xenopedia_
+
+### Do Aliens Dream? (Comic) (2019)
+![Do Aliens Dream? (Comic)](docs/reference/franchise/xeno-do-aliens-dream.png)
+
+_Source: Xenopedia_
+
+### Alien: Blackout (Mobile Game) (2019)
+_Computer Terminal symbol in the 2019 mobile game_
+
+![Alien: Blackout (Mobile Game)](docs/reference/franchise/xeno-blackout.jpg)
+
+_Source: Xenopedia_
+
+### AvP: Thicker Than Blood (Comic) (2020)
+_Stylized version in the 2020 comic series_
+
+![AvP: Thicker Than Blood (Comic)](docs/reference/franchise/xeno-avp-thicker-than-blood.png)
+
+_Source: Xenopedia_
+
+### Alien: The Original Screenplay (Comic) (2020)
+_Icons as they appeared in the 2020 comic adaptation_
+
+![Alien: The Original Screenplay (Comic)](docs/reference/franchise/xeno-original-screenplay.png)
+
+_Source: Xenopedia_
+
+### Alien: Fate of the Nostromo (Board Game) (2021)
+_Icons on objective cards — upper left corner_
+
+![Alien: Fate of the Nostromo (Board Game)](docs/reference/franchise/xeno-fate-of-nostromo.jpg)
+
+_Source: Xenopedia_
+
+### Aliens: Fireteam Elite (Game) (2021)
+![Aliens: Fireteam Elite (Game)](docs/reference/franchise/xeno-fireteam-elite.png)
+
+_Source: Xenopedia_
+
+### Alien: Thaw (Comic) (2022)
+![Alien: Thaw (Comic)](docs/reference/franchise/xeno-thaw.png)
+
+_Source: Xenopedia_
+
+### Aliens: Dark Descent (Game) (2023)
+![Aliens: Dark Descent (Game)](docs/reference/franchise/xeno-dark-descent.png)
+
+_Source: Xenopedia_
+
+### Alien: Descendant (Comic) (2023)
+![Alien: Descendant (Comic)](docs/reference/franchise/xeno-descendant.png)
+
+_Source: Xenopedia_
+
+### Alien: Romulus (Film) (2024)
+_Semiotic Standard as seen in the 2024 film_
+
+![Alien: Romulus (Film)](docs/reference/franchise/xeno-romulus.png)
+
+_Source: Xenopedia_
+
+### Alien: Romulus — Slippery When Wet (2024)
+_Unique "Slippery When Wet" icon introduced in Romulus_
+
+![Alien: Romulus — Slippery When Wet](docs/reference/franchise/xeno-romulus-slippery-when-wet.png)
+
+_Source: Xenopedia_
+
+### Aliens: Nightmare Asylum (1993)
+![Aliens: Nightmare Asylum](docs/reference/franchise/xeno-nightmare-asylum.png)
+
+_Source: Xenopedia_
+
+---
+
+*Original Semiotic Standard designed by Ron Cobb, 1978. Vector recreations by [louh/semiotic-standard](https://github.com/louh/semiotic-standard) (CC BY 4.0).*
+*Franchise reference images © their respective copyright holders, used here for non-commercial design reference.*
