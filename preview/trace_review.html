@@ -1,0 +1,29 @@
+<!DOCTYPE html><html><head><style>
+body{background:#111;color:#fff;font-family:monospace;padding:20px}
+h1{color:#f80;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{background:#222;border:1px solid #444;padding:8px;border-radius:4px;text-align:center}
+.card .row{display:flex;gap:6px;justify-content:center}
+.card img,.card object{display:block;width:110px;height:110px;object-fit:contain;background:#fff;border:1px solid #333}
+.name{margin-top:6px;font-size:11px;color:#f80}
+.sub{font-size:10px;color:#555;margin-top:2px}
+</style></head><body>
+<h1>All 16 — OpenCV ε=1.3 traces</h1>
+<div class="grid" id="grid"></div>
+<script>
+const icons = ["alcohol","allergen_warning","beverage_dispenser","contaminated",
+    "emergency_rations","food_heating","fresh_produce","frozen_goods",
+    "grain","hydroponic","organic_waste","potable_water",
+    "protein","rations","utensils","water_filtration"];
+const grid = document.getElementById('grid');
+icons.forEach(name => {
+    grid.innerHTML += `<div class="card">
+      <div class="row">
+        <div><img src="/work/${name}_3_cropped.png"><div class="sub">crop</div></div>
+        <div><object data="/work/${name}_4_traced.svg" type="image/svg+xml"></object><div class="sub">ε=1.3</div></div>
+      </div>
+      <div class="name">${name}</div>
+    </div>`;
+});
+</script>
+</body></html>

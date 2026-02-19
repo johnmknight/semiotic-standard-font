@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><style>
+body{background:#333;color:#fff;font-family:monospace;padding:20px}
+h1{color:#f80;margin-bottom:16px}
+.row{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:30px}
+.box{text-align:center}
+.box img,.box object{display:block;border:1px solid #555}
+.label{margin-top:5px;font-size:11px;color:#aaa}
+h2{color:#f80;font-size:14px;margin:20px 0 10px}
+</style></head><body>
+<h1>Double border tuning</h1>
+
+<h2>allergen_warning</h2>
+<div class="row">
+  <div class="box">
+    <img src="/work/allergen_warning_1_source.png" style="width:220px;height:220px;object-fit:contain;background:#fff">
+    <div class="label">source (228x228)</div>
+  </div>
+  <div class="box">
+    <object data="/svg/mono/extended/ss-allergen-warning.svg" type="image/svg+xml" style="width:220px;height:220px;background:#fff"></object>
+    <div class="label">composed (1000x1000)</div>
+  </div>
+  <div class="box">
+    <object data="/svg/mono/extended/ss-allergen-warning.svg" type="image/svg+xml" style="width:220px;height:220px;background:#111"></object>
+    <div class="label">on dark</div>
+  </div>
+  <div class="box">
+    <object data="/svg/mono/extended/ss-allergen-warning.svg" type="image/svg+xml" style="width:64px;height:64px;background:#fff"></object>
+    <div class="label">64px</div>
+  </div>
+  <div class="box">
+    <object data="/svg/mono/extended/ss-allergen-warning.svg" type="image/svg+xml" style="width:32px;height:32px;background:#fff"></object>
+    <div class="label">32px</div>
+  </div>
+</div>
+
+<h2>emergency_rations</h2>
+<div class="row">
+  <div class="box">
+    <img src="/work/emergency_rations_1_source.png" style="width:220px;height:220px;object-fit:contain;background:#fff">
+    <div class="label">source</div>
+  </div>
+  <div class="box">
+    <object data="/svg/mono/extended/ss-emergency-rations.svg" type="image/svg+xml" style="width:220px;height:220px;background:#fff"></object>
+    <div class="label">composed</div>
+  </div>
+  <div class="box">
+    <object data="/svg/mono/extended/ss-emergency-rations.svg" type="image/svg+xml" style="width:220px;height:220px;background:#111"></object>
+    <div class="label">on dark</div>
+  </div>
+  <div class="box">
+    <object data="/svg/mono/extended/ss-emergency-rations.svg" type="image/svg+xml" style="width:64px;height:64px;background:#fff"></object>
+    <div class="label">64px</div>
+  </div>
+  <div class="box">
+    <object data="/svg/mono/extended/ss-emergency-rations.svg" type="image/svg+xml" style="width:32px;height:32px;background:#fff"></object>
+    <div class="label">32px</div>
+  </div>
+</div>
+
+<h2>Single border ref (alcohol)</h2>
+<div class="row">
+  <div class="box">
+    <img src="/work/alcohol_1_source.png" style="width:220px;height:220px;object-fit:contain;background:#fff">
+    <div class="label">source</div>
+  </div>
+  <div class="box">
+    <object data="/svg/mono/extended/ss-alcohol.svg" type="image/svg+xml" style="width:220px;height:220px;background:#fff"></object>
+    <div class="label">composed</div>
+  </div>
+  <div class="box">
+    <object data="/svg/mono/extended/ss-alcohol.svg" type="image/svg+xml" style="width:64px;height:64px;background:#fff"></object>
+    <div class="label">64px</div>
+  </div>
+</div>
+</body></html>

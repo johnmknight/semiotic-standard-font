@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Source vs Traced Comparison</title>
+<style>
+body { background: #0a0a1a; color: #ccc; font-family: monospace; padding: 20px; }
+h1 { color: #e94560; text-align: center; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 1200px; margin: 0 auto; }
+.cell { background: #12122a; border: 1px solid #333; border-radius: 8px; padding: 10px; text-align: center; }
+.pair { display: flex; gap: 8px; justify-content: center; align-items: center; }
+.pair img, .pair object { width: 100px; height: 100px; }
+.src { border: 2px solid #2a6; border-radius: 4px; }
+.mono { border: 2px solid #e94560; border-radius: 4px; background: white; }
+.ext { border: 2px solid #4a9eff; border-radius: 4px; background: white; }
+.labels { display: flex; gap: 8px; justify-content: center; font-size: 9px; margin-top: 4px; }
+.labels span { padding: 1px 4px; border-radius: 2px; }
+.l-src { background: #2a6; color: #000; }
+.l-mono { background: #e94560; color: #fff; }
+.l-ext { background: #4a9eff; color: #000; }
+.name { font-size: 11px; color: #888; margin-top: 6px; }
+</style></head><body>
+<h1>SOURCE vs TRACED vs EXTENDED</h1>
+<p style="text-align:center;color:#888;">Green=Source PNG | Red=Mono SVG (vtracer) | Blue=Extended SVG (simplified)</p>
+<div class="grid">
+<div class="cell">
+  <div class="pair">
+    <img class="src" src="compare/alcohol.png">
+    <object class="mono" data="../svg/mono/ss-alcohol.svg" type="image/svg+xml"></object>
+    <object class="ext" data="../svg/mono/extended/ss-alcohol.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="labels"><span class="l-src">SRC</span><span class="l-mono">MONO</span><span class="l-ext">EXT</span></div>
+  <div class="name">alcohol</div>
+</div>
+<div class="cell">
+  <div class="pair">
+    <img class="src" src="compare/allergen_warning.png">
+    <object class="mono" data="../svg/mono/ss-allergen-warning.svg" type="image/svg+xml"></object>
+    <object class="ext" data="../svg/mono/extended/ss-allergen-warning.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="labels"><span class="l-src">SRC</span><span class="l-mono">MONO</span><span class="l-ext">EXT</span></div>
+  <div class="name">allergen_warning</div>
+</div>
+<div class="cell">
+  <div class="pair">
+    <img class="src" src="compare/beverage_dispenser.png">
+    <object class="mono" data="../svg/mono/ss-beverage-dispenser.svg" type="image/svg+xml"></object>
+    <object class="ext" data="../svg/mono/extended/ss-beverage-dispenser.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="labels"><span class="l-src">SRC</span><span class="l-mono">MONO</span><span class="l-ext">EXT</span></div>
+  <div class="name">beverage_dispenser</div>
+</div>
+<div class="cell">
+  <div class="pair">
+    <img class="src" src="compare/contaminated.png">
+    <object class="mono" data="../svg/mono/ss-contaminated.svg" type="image/svg+xml"></object>
+    <object class="ext" data="../svg/mono/extended/ss-contaminated.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="labels"><span class="l-src">SRC</span><span class="l-mono">MONO</span><span class="l-ext">EXT</span></div>
+  <div class="name">contaminated</div>
+</div>
+<div class="cell">
+  <div class="pair">
+    <img class="src" src="compare/emergency_rations.png">
+    <object class="mono" data="../svg/mono/ss-emergency-rations.svg" type="image/svg+xml"></object>
+    <object class="ext" data="../svg/mono/extended/ss-emergency-rations.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="labels"><span class="l-src">SRC</span><span class="l-mono">MONO</span><span class="l-ext">EXT</span></div>
+  <div class="name">emergency_rations</div>
+</div>
+<div class="cell">
+  <div class="pair">
+    <img class="src" src="compare/food_heating.png">
+    <object class="mono" data="../svg/mono/ss-food-heating.svg" type="image/svg+xml"></object>
+    <object class="ext" data="../svg/mono/extended/ss-food-heating.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="labels"><span class="l-src">SRC</span><span class="l-mono">MONO</span><span class="l-ext">EXT</span></div>
+  <div class="name">food_heating</div>
+</div>
+<div class="cell">
+  <div class="pair">
+    <img class="src" src="compare/fresh_produce.png">
+    <object class="mono" data="../svg/mono/ss-fresh-produce.svg" type="image/svg+xml"></object>
+    <object class="ext" data="../svg/mono/extended/ss-fresh-produce.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="labels"><span class="l-src">SRC</span><span class="l-mono">MONO</span><span class="l-ext">EXT</span></div>
+  <div class="name">fresh_produce</div>
+</div>
+<div class="cell">
+  <div class="pair">
+    <img class="src" src="compare/frozen_goods.png">
+    <object class="mono" data="../svg/mono/ss-frozen-goods.svg" type="image/svg+xml"></object>
+    <object class="ext" data="../svg/mono/extended/ss-frozen-goods.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="labels"><span class="l-src">SRC</span><span class="l-mono">MONO</span><span class="l-ext">EXT</span></div>
+  <div class="name">frozen_goods</div>
+</div>
+<div class="cell">
+  <div class="pair">
+    <img class="src" src="compare/grain.png">
+    <object class="mono" data="../svg/mono/ss-grain.svg" type="image/svg+xml"></object>
+    <object class="ext" data="../svg/mono/extended/ss-grain.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="labels"><span class="l-src">SRC</span><span class="l-mono">MONO</span><span class="l-ext">EXT</span></div>
+  <div class="name">grain</div>
+</div>
+<div class="cell">
+  <div class="pair">
+    <img class="src" src="compare/hydroponic.png">
+    <object class="mono" data="../svg/mono/ss-hydroponic.svg" type="image/svg+xml"></object>
+    <object class="ext" data="../svg/mono/extended/ss-hydroponic.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="labels"><span class="l-src">SRC</span><span class="l-mono">MONO</span><span class="l-ext">EXT</span></div>
+  <div class="name">hydroponic</div>
+</div>
+<div class="cell">
+  <div class="pair">
+    <img class="src" src="compare/organic_waste.png">
+    <object class="mono" data="../svg/mono/ss-organic-waste.svg" type="image/svg+xml"></object>
+    <object class="ext" data="../svg/mono/extended/ss-organic-waste.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="labels"><span class="l-src">SRC</span><span class="l-mono">MONO</span><span class="l-ext">EXT</span></div>
+  <div class="name">organic_waste</div>
+</div>
+<div class="cell">
+  <div class="pair">
+    <img class="src" src="compare/potable_water.png">
+    <object class="mono" data="../svg/mono/ss-potable-water.svg" type="image/svg+xml"></object>
+    <object class="ext" data="../svg/mono/extended/ss-potable-water.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="labels"><span class="l-src">SRC</span><span class="l-mono">MONO</span><span class="l-ext">EXT</span></div>
+  <div class="name">potable_water</div>
+</div>
+<div class="cell">
+  <div class="pair">
+    <img class="src" src="compare/protein.png">
+    <object class="mono" data="../svg/mono/ss-protein.svg" type="image/svg+xml"></object>
+    <object class="ext" data="../svg/mono/extended/ss-protein.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="labels"><span class="l-src">SRC</span><span class="l-mono">MONO</span><span class="l-ext">EXT</span></div>
+  <div class="name">protein</div>
+</div>
+<div class="cell">
+  <div class="pair">
+    <img class="src" src="compare/rations.png">
+    <object class="mono" data="../svg/mono/ss-rations.svg" type="image/svg+xml"></object>
+    <object class="ext" data="../svg/mono/extended/ss-rations.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="labels"><span class="l-src">SRC</span><span class="l-mono">MONO</span><span class="l-ext">EXT</span></div>
+  <div class="name">rations</div>
+</div>
+<div class="cell">
+  <div class="pair">
+    <img class="src" src="compare/utensils.png">
+    <object class="mono" data="../svg/mono/ss-utensils.svg" type="image/svg+xml"></object>
+    <object class="ext" data="../svg/mono/extended/ss-utensils.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="labels"><span class="l-src">SRC</span><span class="l-mono">MONO</span><span class="l-ext">EXT</span></div>
+  <div class="name">utensils</div>
+</div>
+<div class="cell">
+  <div class="pair">
+    <img class="src" src="compare/water_filtration.png">
+    <object class="mono" data="../svg/mono/ss-water-filtration.svg" type="image/svg+xml"></object>
+    <object class="ext" data="../svg/mono/extended/ss-water-filtration.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="labels"><span class="l-src">SRC</span><span class="l-mono">MONO</span><span class="l-ext">EXT</span></div>
+  <div class="name">water_filtration</div>
+</div>
+</div></body></html>

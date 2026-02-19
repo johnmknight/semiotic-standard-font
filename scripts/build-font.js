@@ -8,8 +8,12 @@ svgtofont({
   fontName: 'semiotic-standard',
   css: true,
   startUnicode: 0xE001,
-  svgicons2svgfont: { fontHeight: 1000, normalize: true },
-  website: { title: 'Semiotic Standard' }
+  svgicons2svgfont: { 
+    fontHeight: 1000, 
+    normalize: true,
+    centerHorizontally: true,
+    centerVertically: true
+  }
 }).then(() => {
   console.log('Tier 1 monochrome font built successfully.');
 }).catch((err) => {

@@ -1,0 +1,31 @@
+Support both monochrome and multi-color rendering modes
+
+General web projects requiring sci-fi industrial iconography
+
+Originally designed in 1978 for Ridley Scott’s Alien (1979). Published in Cobb’s art book Colorvision (1981). The icons use a consistent design language: rounded-rectangle frames with a separator line dividing a symbolic
+
+Behance: Boris (Baris) Tovmasyan — Detailed analysis of Cobb’s design grid, frame structure, and color system
+
+Cobb’s color system carries semantic meaning — red signals danger/alert, yellow marks active energy processes, blue indicates cold/cryogenic, white/grey denotes habitable life-support areas, and black means vacuum/death.
+
+4.2 Three Rendering Tiers
+
+The font system supports three rendering modes, each suited to different contexts:
+
+Layer A (Frame): The outer rounded-rectangle border, separator line, and any structural frame elements. Typically rendered in the Cobb category color (red, yellow, blue, etc.)
+
+For full Cobb-fidelity rendering (ArtemisOps kiosks, large format displays), generate a multi-color SVG sprite sheet alongside the font. Each icon is a <symbol> element with its authentic color fills:
+
+This section identifies icon families where Cobb’s originals rely on color to distinguish between related icons, and defines structural modifications to ensure each icon is uniquely identifiable in monochrome. These modi
+
+To preserve the semantic layer that color normally carries, each icon receives a small corner badge indicating its Cobb color category. These badges are structural marks in the monochrome glyph that allow a trained user 
+
+Separator line: Horizontal divider approximately 1/3 from the top, creating a label zone above and a symbol zone below
+
+White outline: All icons should be outlined in white when appearing on dark or colored backgrounds
+
+Grid: Originally drawn on graph paper; icons should maintain pixel-grid alignment for crisp rendering
+
+Toggle between Tier 1 (monochrome), Tier 2 (duotone), and Tier 3 (full SVG) rendering modes
+
+The webfont should be hosted locally in the ArtemisOps static assets directory for offline kiosk support (consistent with the existing Tabler Icons and Space Mono/IBM Plex Sans local hosting approach). The kiosk screens 

@@ -1,0 +1,31 @@
+<!DOCTYPE html><html><head><style>
+body{background:#222;color:#fff;font-family:monospace;padding:16px}
+h1{color:#f80;margin-bottom:12px;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(8,1fr);gap:8px}
+.card{text-align:center}
+.card img,.card object{display:block;width:120px;height:120px;object-fit:contain}
+.label{font-size:9px;color:#aaa;margin-top:3px}
+.src{color:#f80}
+</style></head><body>
+<h1>Source vs Composed — 120px side by side</h1>
+<div class="grid" id="g"></div>
+<script>
+const icons = ["alcohol","allergen_warning","beverage_dispenser","contaminated",
+    "emergency_rations","food_heating","fresh_produce","frozen_goods",
+    "grain","hydroponic","organic_waste","potable_water",
+    "protein","rations","utensils","water_filtration"];
+const g = document.getElementById('g');
+icons.forEach(name => {
+    const slug = name.replace(/_/g,'-');
+    g.innerHTML += `
+      <div class="card">
+        <img src="/work/${name}_1_source.png" style="background:#fff">
+        <div class="label src">${name}</div>
+      </div>
+      <div class="card">
+        <object data="/svg/mono/extended/ss-${slug}.svg" type="image/svg+xml" style="background:#fff"></object>
+        <div class="label">composed</div>
+      </div>`;
+});
+</script>
+</body></html>

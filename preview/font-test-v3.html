@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<title>Font Test v3</title>
+<style>
+@font-face {
+  font-family: 'ss-test';
+  src: url('../fonts/semiotic-standard.woff2?v=5') format('woff2'),
+       url('../fonts/semiotic-standard.ttf?v=5') format('truetype');
+}
+body { background: #0a0a1a; color: #ccc; font-family: monospace; padding: 40px; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 900px; margin: 0 auto; }
+.cell { background: #12122a; border: 1px solid #333; border-radius: 8px; padding: 16px; text-align: center; }
+.g { font-family: 'ss-test'; font-size: 80px; color: #e0e0e0; display: block; line-height: 1.2; }
+.n { font-size: 10px; color: #888; margin-top: 8px; }
+</style>
+</head><body>
+<h2 style="text-align:center;color:#e94560;">FONT TEST v3 — evenodd compound paths</h2>
+<div class="grid">
+<div class="cell"><span class="g">&#xE001;</span><div class="n">ALCOHOL U+E001</div></div>
+<div class="cell"><span class="g">&#xE002;</span><div class="n">ALLERGEN U+E002</div></div>
+<div class="cell"><span class="g">&#xE003;</span><div class="n">BEVERAGE U+E003</div></div>
+<div class="cell"><span class="g">&#xE004;</span><div class="n">CONTAMINATED U+E004</div></div>
+<div class="cell"><span class="g">&#xE005;</span><div class="n">EMERGENCY U+E005</div></div>
+<div class="cell"><span class="g">&#xE006;</span><div class="n">FOOD HEAT U+E006</div></div>
+<div class="cell"><span class="g">&#xE007;</span><div class="n">PRODUCE U+E007</div></div>
+<div class="cell"><span class="g">&#xE008;</span><div class="n">FROZEN U+E008</div></div>
+<div class="cell"><span class="g">&#xE009;</span><div class="n">GRAIN U+E009</div></div>
+<div class="cell"><span class="g">&#xE00A;</span><div class="n">HYDROPONIC U+E00A</div></div>
+<div class="cell"><span class="g">&#xE00B;</span><div class="n">ORG WASTE U+E00B</div></div>
+<div class="cell"><span class="g">&#xE00C;</span><div class="n">WATER U+E00C</div></div>
+<div class="cell"><span class="g">&#xE00D;</span><div class="n">PROTEIN U+E00D</div></div>
+<div class="cell"><span class="g">&#xE00E;</span><div class="n">RATIONS U+E00E</div></div>
+<div class="cell"><span class="g">&#xE00F;</span><div class="n">UTENSILS U+E00F</div></div>
+<div class="cell"><span class="g">&#xE010;</span><div class="n">FILTRATION U+E010</div></div>
+</div>
+</body></html>

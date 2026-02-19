@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>Step 3 Crop Review</title>
+<style>
+body { background:#111; color:#fff; font-family:monospace; padding:20px; }
+h1 { color:#f80; }
+.grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+.card { background:#222; border:1px solid #444; border-radius:6px; padding:10px; text-align:center; }
+.card img { max-width:100%; background:#000; border:1px solid #333; }
+.card .name { font-size:11px; color:#aaa; margin-top:6px; }
+.card .size { font-size:10px; color:#666; }
+</style></head><body>
+<h1>Step 3 — Cobb Border Crop Results (all 16)</h1>
+<div class="grid">
+</div>
+<script>
+const icons = ["alcohol","allergen_warning","beverage_dispenser","contaminated",
+    "emergency_rations","food_heating","fresh_produce","frozen_goods",
+    "grain","hydroponic","organic_waste","potable_water",
+    "protein","rations","utensils","water_filtration"];
+const grid = document.querySelector('.grid');
+icons.forEach(name => {
+    const src_url = `/work/${name}_1_source.png`;
+    const crop_url = `/work/${name}_3_cropped.png`;
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+        <div style="display:flex;gap:6px;justify-content:center">
+          <div>
+            <img src="${src_url}" style="width:90px;height:90px;object-fit:contain">
+            <div class="size">source</div>
+          </div>
+          <div>
+            <img src="${crop_url}" style="width:90px;height:90px;object-fit:contain">
+            <div class="size">cropped</div>
+          </div>
+        </div>
+        <div class="name">${name}</div>`;
+    grid.appendChild(card);
+});
+</script>
+</body></html>

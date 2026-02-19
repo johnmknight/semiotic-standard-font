@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mask Review — Semiotic Standard</title>
+<style>
+  body { background: #111; color: #eee; font-family: monospace; margin: 0; padding: 20px; }
+  h1 { color: #f90; font-size: 16px; margin: 0 0 20px; letter-spacing: 2px; text-transform: uppercase; }
+  .icon-section { margin-bottom: 40px; border: 1px solid #333; padding: 16px; border-radius: 4px; }
+  .icon-name { color: #f90; font-size: 13px; margin: 0 0 12px; text-transform: uppercase; letter-spacing: 1px; }
+  .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start; }
+  .card { text-align: center; }
+  .card img { display: block; border: 1px solid #444; background: #222; }
+  .card img.mask { background: #fff; }
+  .card .label { font-size: 10px; color: #888; margin-top: 4px; max-width: 100px; word-break: break-all; }
+  .card .label.source { color: #f90; }
+  .sep { width: 1px; background: #333; align-self: stretch; margin: 0 4px; }
+</style>
+</head>
+<body>
+<h1>Semiotic Standard — Mask Review (Step 1)</h1>
+
+<script>
+const icons = [
+  "alcohol","allergen_warning","beverage_dispenser","contaminated",
+  "emergency_rations","food_heating","fresh_produce","frozen_goods",
+  "grain","hydroponic","organic_waste","potable_water",
+  "protein","rations","utensils","water_filtration"
+];
+
+// We'll load the directory listing dynamically won't work from file://
+// Instead, embed the known mask names per icon from the pipeline output
+const maskData = {
+  "alcohol": ["black_1","white_1","red","black_2","grey","white_2","green"],
+  "allergen_warning": ["yellow_1","black_1","white","grey","red","yellow_2","black_2"],
+  "beverage_dispenser": ["white_1","black_1","black_2","grey","black_3","green","white_2"],
+  "contaminated": ["black_1","white_1","black_2","white_2","grey","black_3","black_4"],
+  "emergency_rations": ["black_1","white_1","black_2","grey","red","white_2","black_3"],
+  "food_heating": ["grey","black_1","white_1","yellow","black_2","black_3","white_2"],
+  "fresh_produce": ["black_1","white_1","green","black_2","black_3","grey","white_2"],
+  "frozen_goods": ["black_1","white","blue","black_2","black_3","grey_1","grey_2"],
+  "grain": ["white_1","black_1","white_2","black_2","black_3","black_4","grey"],
+  "hydroponic": ["black_1","white_1","black_2","black_3","black_4","grey","white_2"],
+  "organic_waste": ["black_1","yellow","white","grey_1","black_2","black_3","grey_2"],
+  "potable_water": ["white_1","black_1","blue","black_2","red","white_2","grey"],
+  "protein": ["green","white_1","black_1","black_2","grey","white_2","black_3"],
+  "rations": ["red","white","black_1","green","grey_1","black_2","grey_2"],
+  "utensils": ["white","black_1","grey_1","black_2","grey_2","green","black_3"],
+  "water_filtration": ["white_1","black_1","blue","black_2","white_2","grey","black_3"]
+};
+
+const BASE = "../svg/masks/";
+const body = document.body;
+
+icons.forEach(icon => {
+  const sec = document.createElement('div');
+  sec.className = 'icon-section';
+
+  const title = document.createElement('div');
+  title.className = 'icon-name';
+  title.textContent = icon.replace(/_/g,' ');
+  sec.appendChild(title);
+
+  const row = document.createElement('div');
+  row.className = 'row';
+
+  // Source image first
+  const srcCard = document.createElement('div');
+  srcCard.className = 'card';
+  const srcImg = document.createElement('img');
+  srcImg.src = BASE + icon + '/_source.png';
+  srcImg.width = 100;
+  srcImg.height = 100;
+  const srcLabel = document.createElement('div');
+  srcLabel.className = 'label source';
+  srcLabel.textContent = 'SOURCE';
+  srcCard.appendChild(srcImg);
+  srcCard.appendChild(srcLabel);
+  row.appendChild(srcCard);
+
+  // Separator
+  const sep = document.createElement('div');
+  sep.className = 'sep';
+  row.appendChild(sep);
+
+  // Mask images
+  const masks = maskData[icon] || [];
+  masks.forEach(m => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    const img = document.createElement('img');
+    img.src = BASE + icon + '/mask_' + m + '.png';
+    img.width = 100;
+    img.height = 100;
+    img.className = 'mask';
+    const label = document.createElement('div');
+    label.className = 'label';
+    label.textContent = m;
+    card.appendChild(img);
+    card.appendChild(label);
+    row.appendChild(card);
+  });
+
+  sec.appendChild(row);
+  body.appendChild(sec);
+});
+</script>
+</body>
+</html>

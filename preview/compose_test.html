@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><style>
+body{background:#111;color:#fff;font-family:monospace;padding:20px}
+h1{color:#f80}
+.row{display:flex;gap:16px;align-items:flex-start}
+.box{text-align:center}
+.box object,.box img{display:block;width:200px;height:200px;object-fit:contain;border:1px solid #444}
+.label{margin-top:5px;font-size:11px;color:#aaa}
+</style></head><body>
+<h1>Step 5 — Compose test: alcohol</h1>
+<div class="row">
+  <div class="box">
+    <img src="/work/alcohol_3_cropped.png" style="background:#fff">
+    <div class="label">cropped source</div>
+  </div>
+  <div class="box">
+    <object data="/work/alcohol_4_traced.svg" type="image/svg+xml" style="background:#fff"></object>
+    <div class="label">traced (ε=1.1)</div>
+  </div>
+  <div class="box">
+    <object data="/svg/mono/extended/ss-alcohol.svg" type="image/svg+xml" style="background:#fff"></object>
+    <div class="label">composed (frame + symbol)</div>
+  </div>
+  <div class="box">
+    <object data="/svg/mono/extended/ss-alcohol.svg" type="image/svg+xml" style="background:#222"></object>
+    <div class="label">on dark bg</div>
+  </div>
+</div>
+</body></html>

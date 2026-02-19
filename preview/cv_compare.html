@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><style>
+body{background:#111;color:#fff;font-family:monospace;padding:20px}
+h1{color:#f80;margin-bottom:16px}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+.box{background:#222;border:1px solid #444;padding:10px;text-align:center;border-radius:4px}
+.box img,.box object,.box embed{display:block;width:220px;height:220px;object-fit:contain;background:#fff;border:1px solid #333}
+.label{margin-top:6px;font-size:12px;color:#aaa}
+.sub{font-size:10px;color:#666}
+</style></head><body>
+<h1>Alcohol — vtracer vs OpenCV comparison</h1>
+<div class="row">
+  <div class="box">
+    <img src="/work/alcohol_3_cropped.png">
+    <div class="label">Source PNG</div>
+    <div class="sub">145×149px B&W crop</div>
+  </div>
+  <div class="box">
+    <object data="/work/alcohol_4_traced.svg" type="image/svg+xml"></object>
+    <div class="label">vtracer (polygon)</div>
+    <div class="sub">filter_speckle=4 corner=60</div>
+  </div>
+  <div class="box">
+    <object data="/work/alcohol_cv_raw.svg" type="image/svg+xml"></object>
+    <div class="label">OpenCV raw</div>
+    <div class="sub">CHAIN_APPROX_NONE (359pts)</div>
+  </div>
+  <div class="box">
+    <object data="/work/alcohol_cv_smooth15.svg" type="image/svg+xml"></object>
+    <div class="label">OpenCV ε=1.5</div>
+    <div class="sub">approxPolyDP smoothed</div>
+  </div>
+  <div class="box">
+    <object data="/work/alcohol_cv_smooth30.svg" type="image/svg+xml"></object>
+    <div class="label">OpenCV ε=3.0</div>
+    <div class="sub">approxPolyDP more simplified</div>
+  </div>
+</div>
+</body></html>

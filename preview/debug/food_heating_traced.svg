@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: visioncortex VTracer 0.6.12 -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="218" height="196">
+<path d="M0,0 L30,0 L26,3 L18,9 L11,17 L7,28 L6,139 L6,167 L8,182 L12,192 L14,196 L0,196 Z " fill="#000000" transform="translate(0,0)"/>
+<path d="M0,0 L32,0 L32,196 L20,196 L22,191 L25,183 L26,172 L26,32 L24,22 L18,12 L10,5 L0,1 Z " fill="#000000" transform="translate(186,0)"/>
+<path d="M0,0 L133,0 L145,3 L155,10 L161,18 L164,27 L164,168 L160,181 L154,189 L152,191 L131,191 L131,190 L141,187 L146,183 L148,183 L150,179 L153,172 L154,167 L154,31 L151,21 L147,16 L137,11 L134,10 L2,10 L-9,14 L-17,23 L-19,30 L-19,168 L-15,179 L-7,186 L0,189 L5,190 L5,191 L-17,191 L-24,183 L-28,174 L-29,169 L-29,29 L-26,19 L-22,13 L-17,8 L-10,3 Z " fill="#000000" transform="translate(42,5)"/>
+<path d="M0,0 L122,0 L131,2 L137,6 L141,11 L143,16 L143,153 L139,162 L133,167 L125,170 L2,170 L-8,168 L-16,161 L-19,155 L-20,150 L-20,90 L-19,15 L-15,7 L-8,2 Z M-3,4 L-11,8 L-15,13 L-16,17 L-16,153 L-13,159 L-8,164 L-1,166 L126,166 L133,162 L138,157 L139,154 L139,15 L135,9 L129,5 L126,4 Z " fill="#000000" transform="translate(48,20)"/>
+<path d="M0,0 L4,1 L6,4 L5,10 L2,16 L3,21 L6,26 L6,32 L2,37 L-1,37 L-1,27 L-5,21 L-5,14 L-1,7 Z " fill="#000000" transform="translate(82,34)"/>
+<path d="M0,0 L4,1 L6,4 L5,11 L3,15 L4,22 L7,28 L6,33 L3,37 L-1,36 L0,28 L-5,19 L-4,13 L-1,8 Z " fill="#000000" transform="translate(99,34)"/>
+<path d="M0,0 L4,1 L6,4 L5,10 L3,14 L3,20 L7,28 L5,34 L2,37 L-1,36 L0,29 L-5,20 L-4,13 L-1,8 Z " fill="#000000" transform="translate(117,34)"/>
+<path d="M0,0 L4,1 L6,7 L2,15 L3,21 L6,26 L6,32 L4,36 L-1,37 L-1,28 L-6,19 L-4,12 L-2,9 L-1,1 Z " fill="#000000" transform="translate(135,34)"/>
+<path d="M0,0 L7,1 L8,5 L-3,5 L-3,1 Z " fill="#000000" transform="translate(148,66)"/>
+<path d="M0,0 L104,0 L108,3 L108,15 L-3,15 L-3,2 Z M87,6 L87,8 L94,9 L95,6 Z M48,7 L47,9 L54,10 L59,9 L59,7 Z " fill="#000000" transform="translate(58,73)"/>
+<path d="M0,0 L11,0 L12,1 L13,45 L13,66 L10,73 L2,74 L-95,73 L-99,70 L-99,1 Z M-51,6 L-51,9 L-49,10 L-40,10 L-36,9 L-36,7 L-38,6 Z M-80,15 L-82,17 L-82,57 L-80,59 L-6,59 L-4,57 L-4,17 L-6,15 Z " fill="#000000" transform="translate(154,91)"/>
+<path d="M0,0 L64,1 L65,2 L66,12 L66,33 L64,35 L-1,35 L-2,34 L-3,3 Z " fill="#000000" transform="translate(79,110)"/>
+<path d="M0,0 L80,0 L79,5 L78,6 L61,6 L60,2 L19,2 L17,6 L1,6 L0,5 Z " fill="#000000" transform="translate(71,167)"/>
+</svg>

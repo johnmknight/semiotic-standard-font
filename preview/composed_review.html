@@ -1,0 +1,25 @@
+<!DOCTYPE html><html><head><style>
+body{background:#333;color:#fff;font-family:monospace;padding:20px}
+h1{color:#f80;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:#222;border:1px solid #444;padding:10px;border-radius:4px;text-align:center}
+.card object{display:block;width:160px;height:160px;margin:0 auto}
+.name{margin-top:6px;font-size:11px;color:#f80}
+</style></head><body>
+<h1>All 16 — Final composed glyphs</h1>
+<div class="grid" id="grid"></div>
+<script>
+const icons = ["alcohol","allergen_warning","beverage_dispenser","contaminated",
+    "emergency_rations","food_heating","fresh_produce","frozen_goods",
+    "grain","hydroponic","organic_waste","potable_water",
+    "protein","rations","utensils","water_filtration"];
+const grid = document.getElementById('grid');
+icons.forEach(name => {
+    const slug = name.replace(/_/g,'-');
+    grid.innerHTML += `<div class="card">
+      <object data="/svg/mono/extended/ss-${slug}.svg" type="image/svg+xml"></object>
+      <div class="name">${name}</div>
+    </div>`;
+});
+</script>
+</body></html>

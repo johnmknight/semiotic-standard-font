@@ -52,13 +52,43 @@ The Semiotic Standard is a set of pictographic icons originally designed by Ron 
 
 ```bash
 npm install
-npm run build        # Full build: SVG optimize → fonts → CSS → sprite → preview
-npm run build:font   # Tier 1 monochrome font only
-npm run build:duotone # Tier 2 duotone fonts
-npm run build:sprite  # Tier 3 SVG sprite sheet
-npm run dev          # Watch & rebuild on SVG changes
-npm run test:mono    # Monochrome differentiation QA
+node scripts/build-font-direct.js   # Build TTF/WOFF/WOFF2/EOT from svg/mono/extended/
+npm run build:duotone               # Tier 2 duotone fonts
+npm run build:sprite                # Tier 3 SVG sprite sheet
+npm run dev                         # Watch & rebuild on SVG changes
+npm run test:mono                   # Monochrome differentiation QA
 ```
+
+> **Note:** `npm run build:font` (svgtofont wrapper) is superseded by `build-font-direct.js`.
+> svgtofont v4 silently produced empty glyphs on compound paths and crashes on Node v24.
+> The direct pipeline calls `svgicons2svgfont` → `svg2ttf` → `ttf2woff` → `ttf2woff2` directly.
+
+## Bitmap-to-SVG Pipeline (Food & Dining category)
+
+Source icons are hand-drawn PNGs embedded in SVG wrappers in `from john/`. The full
+pipeline converts them to font-ready vector glyphs:
+
+| Step | Script | Output |
+|------|--------|--------|
+| 1. Extract PNG + B&W + crop Cobb border | `scripts/step1_extract.py` | `work/{name}_1–3.png` |
+| 2. OpenCV contour trace | `scripts/trace_all.py` | `work/{name}_4_traced.svg` |
+| 3. Normalize to 1000×1000 + compose Cobb frame | `scripts/step5_compose.py` | `svg/mono/extended/ss-{name}.svg` |
+| 4. Fix path winding for font rasterizer | `scripts/step6_fix_winding.py` | `svg/mono/extended/ss-{name}.svg` (in-place) |
+| 5. Build font | `scripts/build-font-direct.js` | `fonts/semiotic-standard.*` |
+
+**Tracing:** ε=1.3 default; ε=1.1 for alcohol, emergency_rations, frozen_goods, rations.
+
+**Frame geometry:** 1000×1000 canvas; outer ring at x=10 (tight to edge, matching Cobb
+originals); ring thickness ~80u. `allergen_warning` uses a double concentric border.
+
+**Winding fix:** SVG `fill-rule="evenodd"` is incompatible with font rasterizers (non-zero
+winding). Additionally, `svgicons2svgfont` flips the Y-axis on embed, reversing all winding
+directions. Step 4 corrects frame subpaths explicitly and leaves OpenCV symbol subpaths
+unchanged (already correct after flip). See DECISIONS.md for full rationale and failed
+approaches.
+
+Preview pages: `preview/step3_review.html`, `preview/trace_review.html`,
+`preview/source_vs_composed.html`, `preview/font-test.html`
 
 ## Project Structure
 

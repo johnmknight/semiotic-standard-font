@@ -1,0 +1,66 @@
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8">
+<style>
+@font-face {
+  font-family: 'semiotic-standard';
+  src: url('/fonts/semiotic-standard.woff2') format('woff2'),
+       url('/fonts/semiotic-standard.woff') format('woff'),
+       url('/fonts/semiotic-standard.ttf') format('truetype');
+  font-weight: normal; font-style: normal;
+}
+body { background: #222; color: #fff; font-family: monospace; padding: 20px; }
+h1 { color: #f80; font-size: 14px; }
+.grid { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 16px; }
+.card { text-align: center; width: 100px; }
+.icon { font-family: 'semiotic-standard'; font-size: 64px; line-height: 1;
+        display: block; color: white; }
+.icon-sm { font-family: 'semiotic-standard'; font-size: 32px; line-height: 1;
+           display: block; color: white; }
+.label { font-size: 9px; color: #888; margin-top: 4px; word-break: break-all; }
+h2 { color: #f80; font-size: 12px; margin: 20px 0 8px; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+</style>
+</head><body>
+<h1>Semiotic Standard — Font Test</h1>
+
+<h2>64px — white on dark</h2>
+<div class="grid">
+  <div class="card"><span class="icon">&#xE001;</span><div class="label">alcohol</div></div>
+  <div class="card"><span class="icon">&#xE002;</span><div class="label">allergen-warning</div></div>
+  <div class="card"><span class="icon">&#xE003;</span><div class="label">beverage-dispenser</div></div>
+  <div class="card"><span class="icon">&#xE004;</span><div class="label">contaminated</div></div>
+  <div class="card"><span class="icon">&#xE005;</span><div class="label">emergency-rations</div></div>
+  <div class="card"><span class="icon">&#xE006;</span><div class="label">food-heating</div></div>
+  <div class="card"><span class="icon">&#xE007;</span><div class="label">fresh-produce</div></div>
+  <div class="card"><span class="icon">&#xE008;</span><div class="label">frozen-goods</div></div>
+  <div class="card"><span class="icon">&#xE009;</span><div class="label">grain</div></div>
+  <div class="card"><span class="icon">&#xE00A;</span><div class="label">hydroponic</div></div>
+  <div class="card"><span class="icon">&#xE00B;</span><div class="label">organic-waste</div></div>
+  <div class="card"><span class="icon">&#xE00C;</span><div class="label">potable-water</div></div>
+  <div class="card"><span class="icon">&#xE00D;</span><div class="label">protein</div></div>
+  <div class="card"><span class="icon">&#xE00E;</span><div class="label">rations</div></div>
+  <div class="card"><span class="icon">&#xE00F;</span><div class="label">utensils</div></div>
+  <div class="card"><span class="icon">&#xE010;</span><div class="label">water-filtration</div></div>
+</div>
+
+<h2>Sizes — alcohol (U+E001)</h2>
+<div class="row">
+  <span style="font-family:'semiotic-standard';font-size:128px;color:white">&#xE001;</span>
+  <span style="font-family:'semiotic-standard';font-size:64px;color:white">&#xE001;</span>
+  <span style="font-family:'semiotic-standard';font-size:32px;color:white">&#xE001;</span>
+  <span style="font-family:'semiotic-standard';font-size:16px;color:white">&#xE001;</span>
+  <span style="font-family:'semiotic-standard';font-size:12px;color:white">&#xE001;</span>
+</div>
+
+<h2>On light background</h2>
+<div class="row" style="background:#f0f0f0;padding:12px;border-radius:4px">
+  <span style="font-family:'semiotic-standard';font-size:64px;color:black">&#xE001;</span>
+  <span style="font-family:'semiotic-standard';font-size:64px;color:black">&#xE002;</span>
+  <span style="font-family:'semiotic-standard';font-size:64px;color:black">&#xE003;</span>
+  <span style="font-family:'semiotic-standard';font-size:64px;color:black">&#xE004;</span>
+  <span style="font-family:'semiotic-standard';font-size:64px;color:black">&#xE005;</span>
+  <span style="font-family:'semiotic-standard';font-size:64px;color:black">&#xE006;</span>
+  <span style="font-family:'semiotic-standard';font-size:64px;color:black">&#xE007;</span>
+  <span style="font-family:'semiotic-standard';font-size:64px;color:black">&#xE008;</span>
+</div>
+</body></html>

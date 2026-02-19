@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><style>
+body{background:#333;color:#fff;font-family:monospace;padding:20px}
+h1{color:#f80}
+.row{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.box{text-align:center}
+.box object,.box img{display:block;border:1px solid #555}
+.label{margin-top:5px;font-size:11px;color:#aaa}
+h2{color:#f80;font-size:13px;margin:16px 0 8px}
+</style></head><body>
+<h1>Border comparison</h1>
+
+<h2>alcohol — single vs double</h2>
+<div class="row">
+  <div class="box">
+    <img src="/work/alcohol_1_source.png" style="width:200px;height:200px;object-fit:contain;background:#fff">
+    <div class="label">source</div>
+  </div>
+  <div class="box">
+    <object data="/svg/mono/extended/ss-alcohol.svg" type="image/svg+xml" style="width:200px;height:200px;background:#fff"></object>
+    <div class="label">single border (current)</div>
+  </div>
+  <div class="box">
+    <object data="/work/alcohol_double_test.svg" type="image/svg+xml" style="width:200px;height:200px;background:#fff"></object>
+    <div class="label">double border (test)</div>
+  </div>
+  <div class="box">
+    <object data="/work/alcohol_double_test.svg" type="image/svg+xml" style="width:200px;height:200px;background:#111"></object>
+    <div class="label">double border on dark</div>
+  </div>
+</div>
+
+<h2>emergency_rations — reverted to single</h2>
+<div class="row">
+  <div class="box">
+    <img src="/work/emergency_rations_1_source.png" style="width:200px;height:200px;object-fit:contain;background:#fff">
+    <div class="label">source</div>
+  </div>
+  <div class="box">
+    <object data="/svg/mono/extended/ss-emergency-rations.svg" type="image/svg+xml" style="width:200px;height:200px;background:#fff"></object>
+    <div class="label">single border (reverted)</div>
+  </div>
+</div>
+
+<h2>allergen_warning — double (kept)</h2>
+<div class="row">
+  <div class="box">
+    <img src="/work/allergen_warning_1_source.png" style="width:200px;height:200px;object-fit:contain;background:#fff">
+    <div class="label">source</div>
+  </div>
+  <div class="box">
+    <object data="/svg/mono/extended/ss-allergen-warning.svg" type="image/svg+xml" style="width:200px;height:200px;background:#fff"></object>
+    <div class="label">double border (kept)</div>
+  </div>
+</div>
+</body></html>

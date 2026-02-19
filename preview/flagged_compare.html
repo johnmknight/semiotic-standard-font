@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head><style>
+body{background:#111;color:#fff;font-family:monospace;padding:20px}
+h1{color:#f80;margin-bottom:20px}
+.icon-section{margin-bottom:30px;border:1px solid #333;border-radius:6px;padding:12px}
+.icon-section h2{color:#f80;margin:0 0 10px;font-size:14px}
+.row{display:flex;gap:10px;align-items:flex-end}
+.box{text-align:center}
+.box img,.box object{display:block;width:140px;height:140px;object-fit:contain;background:#fff;border:1px solid #444}
+.label{margin-top:4px;font-size:11px;color:#aaa}
+.sub{font-size:10px;color:#555}
+.best{border-color:#f80 !important}
+</style></head><body>
+<h1>Flagged icons — epsilon comparison</h1>
+<script>
+const icons = [
+  {name:"alcohol",       pts:{1.0:17, 1.1:17, 1.2:16, 1.3:15}},
+  {name:"emergency_rations", pts:{1.0:68, 1.1:66, 1.2:64, 1.3:63}},
+  {name:"frozen_goods",  pts:{1.0:120,1.1:113,1.2:106,1.3:104}},
+  {name:"rations",       pts:{1.0:32, 1.1:31, 1.2:28, 1.3:27}},
+];
+const epsilons = [1.0, 1.1, 1.2, 1.3];
+const container = document.body;
+
+icons.forEach(({name, pts}) => {
+  const sec = document.createElement('div');
+  sec.className = 'icon-section';
+  sec.innerHTML = `<h2>${name}</h2>`;
+  const row = document.createElement('div');
+  row.className = 'row';
+
+  // Source
+  row.innerHTML += `<div class="box">
+    <img src="/work/${name}_3_cropped.png">
+    <div class="label">source</div><div class="sub">&nbsp;</div>
+  </div>`;
+
+  epsilons.forEach(e => {
+    const label = String(e).replace('.','_');
+    row.innerHTML += `<div class="box">
+      <object data="/work/${name}_eps_${label}.svg" type="image/svg+xml"></object>
+      <div class="label">e=${e}</div>
+      <div class="sub">${pts[e]} pts</div>
+    </div>`;
+  });
+
+  sec.appendChild(row);
+  container.appendChild(sec);
+});
+</script>
+</body></html>
